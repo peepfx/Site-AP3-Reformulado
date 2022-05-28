@@ -1,0 +1,281 @@
+/* GERAL */
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: rgb(244, 204, 203);
+  margin: 0px;
+  font-family: Arial;
+}
+
+a, ul, li {
+  text-decoration: none;
+  list-style: none;
+}
+
+h1, h2, p, a, form, img, .aside2{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: block;
+  background-color: #E98F88;
+  width: 90%;
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+  box-shadow: 5px 5px 5px;
+  border-radius: 4px;
+}
+
+header, img {
+  max-width: 100%;
+  display: block;
+  grid-column: span 2;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+main {
+  grid-column: span 2;
+}
+
+/* Estilizando - Primeiro Nav */
+.topo img {
+  width: 1vh;
+}
+
+.nav-inicio {
+  text-align: center;
+  display: flex;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  grid-column: 1 / 3;
+}
+
+.lista-num1 {
+  display: flex;
+  margin: 0 auto;
+}
+
+.nav-inicio ul li {
+  margin-right: 2rem;
+}
+
+.lista-num1 a{
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  background-color: #E98F88;
+  margin: 1rem;
+  padding: 0.8rem;
+}
+
+/* Estilizando - Conteúdo */
+
+.freddy, .bonnie, .chica, .foxy {
+  margin-bottom: 6rem;
+}
+
+section .freddy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr repeat(auto);
+}
+
+.freddy img {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.freddy h2 {
+  font-size: 5rem;
+  place-self: end;
+  text-align: center;
+}
+
+.freddy p {
+  justify-self: start;
+}
+
+section .bonnie {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr repeat(auto);
+}
+
+.bonnie img {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.bonnie h2 {
+  place-self: end;
+  font-size: 5rem;
+  text-align: center;
+}
+
+section .chica {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr repeat(auto);
+}
+
+.chica img {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.chica h2 {
+  place-self: end;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.section-foxy {
+margin: 0px;
+}
+
+section .foxy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr repeat(auto);
+}
+
+.foxy img {
+  grid-column: 2;
+  grid-row: 1 / 3;
+}
+
+.foxy h2 {
+  place-self: start;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.foxy p {
+  grid-row: 2;
+}
+
+.aside-1 h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  position: relative;
+}
+
+.aside-1 h2::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 6px;
+  background-color: black;
+  position: absolute;
+  border-radius: 4px;
+  top: -40px;
+  z-index: 1;
+}
+
+.aside-1 h2::after {
+  content: '';
+  display: block;
+  width: 150px;
+  height: 6px;
+  background-color: black;
+  position: absolute;
+  border-radius: 4px;
+  top: 55px;
+  right: 345px;
+}
+
+.form1 {
+  padding: 1.5rem;
+}
+
+form .pnome {
+  margin-left: 2rem;
+  background-color: #F4CCCB;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+  display: inline-block;
+}
+
+form .input1 {
+  padding: 0.3rem;
+  padding-right: 1rem;
+  margin-left: 0.3rem;
+  border-radius: 0.3rem;
+}
+
+form .snome {
+  background-color: #F4CCCB;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+form .input2 {
+  padding: 0.3rem;
+  padding-right: 1rem;
+  margin-left: 0.3rem;
+  border-radius: 0.3rem;
+}
+
+form .botaodoform {
+  display: inline-block;
+  padding: 0.35rem 1.3rem;
+  margin-left: 2rem;
+  background-color: #F4CCCB;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+
+}
+.botaodoform:hover{
+  background-color: black;
+  color: #E98F88;
+}
+
+.aside2 {
+  height: 145px;
+  position: relative;
+}
+
+aside nav .botao-aside2 {
+  color: black;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 15px;
+}
+
+.botao-aside2:hover {
+  background-color: black;
+  color: #E98F88;
+}
+
+aside nav .botaotopo {
+  color: black;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 15px;
+}
+
+.botaotopo:hover {
+  background: black;
+  color: #E98F88;
+}
+
+footer {
+  grid-column: 1 / -1;
+  padding: 4rem;
+  background-image: linear-gradient(#F4CCCB, #fff);
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+footer span {
+  font-size: 1.5rem;
+}
