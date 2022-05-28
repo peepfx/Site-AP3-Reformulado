@@ -13,10 +13,23 @@ a, ul, li {
   list-style: none;
 }
 
-h1, h2, p, a, form, img, .aside2{
+h1, h2, form, img, .aside2{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   display: block;
   background-color: #E98F88;
+  width: 90%;
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+  box-shadow: 5px 5px 5px;
+  border-radius: 4px;
+}
+
+p, a{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: block;
+  background-color: #FCB1AB;
   width: 90%;
   padding: 20px;
   margin: 0 auto;
@@ -40,16 +53,29 @@ main {
   grid-column: span 2;
 }
 
+h1 {
+  width: 100%;
+  border-radius: 0px;
+  border-left: 0px transparent;
+  border-right: 0px transparent;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2:hover {
+  border: 1px solid #822B25;
+  box-decoration-break: slice;
+}
+
 /* Estilizando - Primeiro Nav */
 .topo img {
-  width: 1vh;
+  width: 100%;
 }
 
 .nav-inicio {
   text-align: center;
   display: flex;
   padding: 2rem;
-  margin-bottom: 1rem;
   grid-column: 1 / 3;
 }
 
@@ -67,9 +93,15 @@ main {
   text-decoration: none;
   color: black;
   font-size: 1.2rem;
-  background-color: #E98F88;
+  background-color: #FCB1AB;
   margin: 1rem;
   padding: 0.8rem;
+}
+
+.lista-num1 a:hover{
+  background-color: black;
+  color: #FCB1AB;
+  border: 1px solid #822B25;
 }
 
 /* Estilizando - Conteúdo */
