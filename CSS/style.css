@@ -6,6 +6,7 @@ body {
   background: rgb(244, 204, 203);
   margin: 0px;
   font-family: Arial;
+  box-sizing: border-box;
 }
 
 a, ul, li {
@@ -55,11 +56,14 @@ main {
 
 h1 {
   width: 100%;
+  box-sizing: border-box;
   border-radius: 0px;
   border-left: 0px transparent;
   border-right: 0px transparent;
   text-align: center;
+  margin-right: 4rem;
   margin-bottom: 2rem;
+  font-size: 3.5rem;
 }
 
 h2:hover {
