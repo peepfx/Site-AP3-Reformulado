@@ -1,4 +1,7 @@
 /* GERAL */
+* {
+  box-sizing: border-box;
+}
 
 body {
   display: grid;
@@ -44,6 +47,7 @@ header, img {
   max-width: 100%;
   display: block;
   grid-column: span 2;
+  margin-bottom: 0px;
 }
 
 p {
@@ -62,9 +66,10 @@ h1 {
   border-right: 0px transparent;
   text-align: center;
   margin-right: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3.4rem;
   font-size: 3.5rem;
 }
+
 
 h2:hover {
   border: 1px solid #822B25;
@@ -118,6 +123,7 @@ section .freddy {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr repeat(auto);
+  position: relative;
 }
 
 .freddy img {
@@ -133,6 +139,26 @@ section .freddy {
 
 .freddy p {
   justify-self: start;
+}
+
+section .topo-freddy {
+position: absolute;
+display: block;
+padding: 10px 20px;
+width: 150px;
+text-align: center;
+top: 725px;
+left: 730px;
+box-shadow: 0px 0px 0px 0px;
+background-color: #E98F88;
+color: black;
+font-weight: lighter;
+}
+
+section .topo-freddy:hover {
+  background-color: black;
+  color: #E98F88;
+  border: 1px solid #E98F88;
 }
 
 section .bonnie {
@@ -152,6 +178,25 @@ section .bonnie {
   text-align: center;
 }
 
+section .topo-bonnie {
+  position: absolute;
+  display: block;
+  padding: 10px 20px;
+  width: 150px;
+  text-align: center;
+  top: 2357px;
+  left: 730px;
+  box-shadow: 0px 0px 0px 0px;
+  background-color: #E98F88;
+  color: black;
+  }
+  
+  section .topo-bonnie:hover {
+    background-color: black;
+    color: #E98F88;
+    border: 1px solid #E98F88;
+  }
+
 section .chica {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -169,14 +214,33 @@ section .chica {
   text-align: center;
 }
 
-.section-foxy {
-margin: 0px;
-}
+section .topo-chica {
+  position: absolute;
+  display: block;
+  padding: 10px 20px;
+  width: 150px;
+  text-align: center;
+  top: 3376px;
+  left: 725px;
+  box-shadow: 0px 0px 0px 0px;
+  background-color: #E98F88;
+  color: black;
+  }
+  
+  section .topo-chica:hover {
+    background-color: black;
+    color: #E98F88;
+    border: 1px solid #E98F88;
+  }
 
 section .foxy {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr repeat(auto);
+}
+
+.section-foxy {
+  margin: 0px;
 }
 
 .foxy img {
@@ -194,6 +258,25 @@ section .foxy {
   grid-row: 2;
 }
 
+section .topo-foxy {
+  position: absolute;
+  display: block;
+  padding: 10px 20px;
+  width: 150px;
+  text-align: center;
+  top: 4460px;
+  left: 1025px;
+  box-shadow: 0px 0px 0px 0px;
+  background-color: #E98F88;
+  color: black;
+  }
+  
+  section .topo-foxy:hover {
+    background-color: black;
+    color: #E98F88;
+    border: 1px solid #E98F88;
+  }
+
 .aside-1 h2 {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -204,13 +287,14 @@ section .foxy {
 .aside-1 h2::before {
   content: '';
   display: block;
-  width: 100px;
+  width: 200px;
   height: 6px;
   background-color: black;
   position: absolute;
   border-radius: 4px;
-  top: -40px;
-  z-index: 1;
+  z-index: -1;
+  right: -200px;
+
 }
 
 .aside-1 h2::after {
@@ -222,7 +306,7 @@ section .foxy {
   position: absolute;
   border-radius: 4px;
   top: 55px;
-  right: 345px;
+  right: 300px;
 }
 
 .form1 {
@@ -251,7 +335,7 @@ form .snome {
   border-radius: 0.3rem;
   padding: 0.2rem;
   display: inline-block;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 form .input2 {
@@ -264,7 +348,7 @@ form .input2 {
 form .botaodoform {
   display: inline-block;
   padding: 0.35rem 1.3rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
   background-color: #F4CCCB;
   border: 1px solid black;
   border-radius: 0.3rem;
@@ -275,9 +359,33 @@ form .botaodoform {
   color: #E98F88;
 }
 
+form .mensagem {
+  background-color: #F4CCCB;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+  display: inline-block;
+  margin-top: 1.3rem;
+  margin-left: 2rem;
+}
+
+form .input3 {
+  padding: 0.3rem;
+  padding-bottom: 5rem;
+  padding-right: 23.7rem;
+  margin-left: 0.3rem;
+  border-radius: 0.3rem;
+}
+
+
 .aside2 {
-  height: 145px;
+  height: 300px;
   position: relative;
+}
+
+.nav2 {
+  display: grid;
+  gap: 14px;
 }
 
 aside nav .botao-aside2 {
@@ -288,6 +396,18 @@ aside nav .botao-aside2 {
 }
 
 .botao-aside2:hover {
+  background-color: black;
+  color: #E98F88;
+}
+
+aside nav .botao-aside3 {
+  color: black;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 15px;
+}
+
+.botao-aside3:hover {
   background-color: black;
   color: #E98F88;
 }
